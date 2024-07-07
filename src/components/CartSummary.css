@@ -63,6 +63,8 @@
 .checkout-button {
   background-color: #0c312f;
   color: white;
+
+  padding: 16px 10px;
 }
 
 .paypal-button {
