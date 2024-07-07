@@ -51,11 +51,8 @@
 
 .footer {
   background: #10413f;
-  color: white;
   padding: 40px 20px;
   text-align: left;
-
-  justify-content: center;
 }
 
 .footer-links {
@@ -79,6 +76,7 @@
   font-weight: 700;
   line-height: 32.68px;
   text-align: left;
+  color: #fff;
 }
 
 .footer-column ul {
@@ -91,7 +89,7 @@
 }
 
 .footer-column a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -109,13 +107,14 @@
 
 .social-icons li {
   margin-right: 10px;
+  color: #fff;
 }
 
 .social-icons a {
   font-size: 20px;
-  color: white;
 }
 
-.footer-bottom {
+.footer-bottom p {
   margin-top: 20px;
+  color: #fff;
 }

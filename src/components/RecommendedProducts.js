@@ -5,7 +5,7 @@ import "./RecommendedProducts.css";
 const RecommendedProducts = ({ products }) => (
   <div className="recommended-products">
     <h2>You Might Also Like</h2>
-    <div className="product-grid">
+    <div className="recommend-product-grid">
       {products.map((product) => (
         <Product key={product.id} {...product} />
       ))}
