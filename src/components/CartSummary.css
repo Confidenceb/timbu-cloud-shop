@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  color: #1a1a1a;
+  font-family: "Nunito", sans-serif;
+}
+
 .cart-summary {
   padding: 20px;
   margin-left: 20px;
 
   width: 512px;
+}
+
+.cart-summary-header {
+  display: flex;
+  justify-content: center;
 }
 
 .summary-header {
@@ -12,11 +24,23 @@
 
   padding: 8px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #1a1a1a;
+  width: fit-content;
 
   text-align: center;
 
-  width: fit-content;
+  position: relative;
+  color: #1a1a1a;
+}
+
+.summary-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #10413f;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .cart-summary p {
@@ -50,4 +74,21 @@
 
 .secure-payments {
   margin-top: 20px;
+}
+
+.secure-payments p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: left;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  cursor: pointer;
 }

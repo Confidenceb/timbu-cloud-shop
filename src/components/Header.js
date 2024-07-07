@@ -5,14 +5,18 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <div className="logo">Giora</div>
+      <Link className="link" to="/">
+        <div className="logo">Giora</div>
+      </Link>
       <nav className="nav">
         <ul className="nav-links">
           <li className="nav-link">
             <a href="/">Men</a>
           </li>
           <li className="nav-link">
-            <a href="/">Women</a>
+            <a href="/" className="active">
+              Women
+            </a>
           </li>
           <li className="nav-link">
             <a href="/">Unisex</a>
