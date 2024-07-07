@@ -1,7 +1,8 @@
 .cart-summary {
   padding: 20px;
-  border: 1px solid #ddd;
   margin-left: 20px;
+
+  width: 512px;
 }
 
 .summary-header {
@@ -19,11 +20,11 @@
 }
 
 .cart-summary p {
-  margin: 10px 0;
-}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.cart-summary h3 {
-  margin: 20px 0;
+  margin-bottom: 24px;
 }
 
 .button {
@@ -33,6 +34,7 @@
   margin-bottom: 10px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .checkout-button {
@@ -41,7 +43,7 @@
 }
 
 .paypal-button {
-  border: 1px solid #ffc439;
+  border: 1px solid #0c312f;
   color: black;
   background: none;
 }

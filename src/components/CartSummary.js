@@ -14,10 +14,10 @@ const CartSummary = ({ total }) => (
       <span>Add Promo Code</span>
       <span>--</span>
     </p>
-    <h3>
-      <span>Total</span>
-      <span>${total}</span>
-    </h3>
+    <p>
+      <h3>Total</h3>
+      <h3>${total}</h3>
+    </p>
     <Button className="checkout-button">Check Out</Button>
     <Button className="paypal-button">
       <svg

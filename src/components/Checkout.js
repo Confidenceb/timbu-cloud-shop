@@ -70,7 +70,7 @@ const recommendedProducts = [
 const Checkout = () => (
   <div className="checkout">
     <Header />
-    <div className="main-content">
+    <div className="cart-main-content">
       <Cart items={items} />
       <CartSummary
         total={items.reduce((acc, item) => acc + item.price * item.quantity, 0)}
