@@ -133,7 +133,13 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 1px solid #919191;
+  border: 1px solid #000;
+  background: none;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
 }
