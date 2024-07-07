@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Cart from "../components/Cart";
-import CartSummary from "../components/CartSummary";
-import RecommendedProducts from "../components/RecommendedProducts";
-import "./Checkout.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import Cart from "./Cart";
+import CartSummary from "./CartSummary";
+import RecommendedProducts from "./RecommendedProducts";
+import "./CartPage.css";
 
 const items = [
   {
@@ -67,8 +67,8 @@ const recommendedProducts = [
   },
 ];
 
-const Checkout = () => (
-  <div className="checkout">
+const CartPage = () => (
+  <div className="cartpage">
     <Header />
     <div className="cart-main-content">
       <Cart items={items} />
@@ -82,4 +82,4 @@ const Checkout = () => (
   </div>
 );
 
-export default Checkout;
+export default CartPage;

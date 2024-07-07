@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import "./App.css";
-import Checkout from "./components/Checkout";
+import Checkout from "./components/CartPage";
 
 function App() {
   return (
