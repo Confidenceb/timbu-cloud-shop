@@ -66,8 +66,11 @@ const CartSummary = ({ total }) => (
       </svg>
     </Button>
     <div className="secure-payments">
-      <span>Secure Payments:</span>
-      <img src="path-to-secure-payment-icons.png" alt="Secure Payments" />
+      <p>Secure Payments:</p>
+      <div className="logo-container">
+        <img src="path-to-secure-payment-icons.png" alt="Secure Payments" />
+        hello
+      </div>
     </div>
   </div>
 );
