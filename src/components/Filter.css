@@ -1,0 +1,100 @@
+.filter {
+  padding: 32px 38px 32px 64px;
+  border-right: 1px solid #b5b5b5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.filter-header h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  margin: 0;
+}
+
+.category-item label {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  font-family: Nunito;
+  font-size: 16px;
+  text-align: left;
+  line-height: 21.82px;
+}
+
+.category-item label:hover,
+.category-item label:active {
+  color: #10413f;
+  font-weight: 700;
+}
+
+.filter-toggle {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.filter-section ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filter-section li {
+  /* margin-bottom: 10px; */
+  display: flex;
+  align-items: center;
+}
+
+.filter-section input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.filter-section label {
+  font-size: 0.9em;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-option i {
+  display: none;
+}
+
+.color-option.selected i {
+  display: block;
+}

@@ -1,0 +1,57 @@
+.cart-summary {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+}
+
+.summary-header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+
+  padding: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1a1a1a;
+
+  text-align: center;
+
+  width: fit-content;
+}
+
+.cart-summary p {
+  margin: 10px 0;
+}
+
+.cart-summary h3 {
+  margin: 20px 0;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-button {
+  background-color: #0c312f;
+  color: white;
+}
+
+.paypal-button {
+  border: 1px solid #ffc439;
+  color: black;
+  background: none;
+}
+
+.secure-payments {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.secure-payments img {
+  margin-left: 10px;
+}

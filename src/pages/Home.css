@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  /* flex-grow: 1;   */
+
+  margin: 0 auto;
+}
+
+.filter {
+  margin-right: 20px;
+  /* flex: 0 0 250px; Set a fixed width for the filter */
+}

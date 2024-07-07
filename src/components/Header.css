@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Jokerman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #e7ecec;
+
+  /* max-width: 1300px; */
+  /* margin: 0 auto; */
+}
+
+.logo {
+  font-family: "Jokerman", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #1a1a1a;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22.28px;
+
+  transition: all 0.3s ease;
+}
+
+.nav-link a:hover::after,
+.nav-link a:focus::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #10413f;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+  color: #10413f;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-family: "Nunito", sans-serif;
+
+  background: #e7ecef;
+}
+
+.search-container input::placeholder {
+  color: #aaa;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icons a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.icons a:hover,
+.icons a:focus {
+  color: #10413f;
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  width: 346px;
+  height: 100%;
+  margin: 10px;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.product-image-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.like-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.like-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.limited {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  text-align: left;
+}
+
+.product-details h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  text-align: left;
+}
+
+.product-details p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.product-colors {
+  display: flex;
+  /* margin: 10px 0; */
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin-right: 5px;
+  position: relative;
+}
+
+.color-option i {
+  display: none;
+}
+
+.color-option.selected i {
+  display: block;
+}
+
+.product-price {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  text-align: left;
+}

@@ -1,0 +1,12 @@
+.recommended-products {
+  padding: 20px;
+}
+
+.recommended-products h2 {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 20px;
+}
