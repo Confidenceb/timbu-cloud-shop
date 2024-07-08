@@ -72,24 +72,3 @@
   color: black;
   background: none;
 }
-
-.secure-payments {
-  margin-top: 20px;
-}
-
-.secure-payments p {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21.82px;
-  text-align: left;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo {
-  cursor: pointer;
-}

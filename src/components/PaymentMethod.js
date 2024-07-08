@@ -1,6 +1,7 @@
 import React from "react";
 import "./PaymentMethod.css";
 import Button from "./Button";
+import PaymentIcon from "./PaymentIcons";
 
 const PaymentMethod = () => (
   <div className="payment-method">
@@ -104,6 +105,7 @@ const PaymentMethod = () => (
         </div>
       </Button>
     </div>
+    <PaymentIcon header={"We Accept"} />
   </div>
 );
 
