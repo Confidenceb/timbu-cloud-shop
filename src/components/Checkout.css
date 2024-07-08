@@ -1,0 +1,36 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  padding: 20px;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.checkout-left {
+  flex: 1;
+}
+
+.buy-now-button {
+  padding: 15px;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .order-summary {
+    width: 100%;
+  }
+}

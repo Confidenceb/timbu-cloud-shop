@@ -1,0 +1,23 @@
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-method h3 {
+  margin-bottom: 10px;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-method-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.payment-method-button.active {
+  background-color: #004d40;
+  color: white;
+}

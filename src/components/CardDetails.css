@@ -1,0 +1,25 @@
+.card-details {
+  margin-bottom: 20px;
+}
+
+.card-details h3 {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.save-card {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}

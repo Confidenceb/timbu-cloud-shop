@@ -1,0 +1,23 @@
+.delivery-options {
+  margin-bottom: 20px;
+}
+
+.delivery-options h3 {
+  margin-bottom: 10px;
+}
+
+.delivery-methods {
+  display: flex;
+  gap: 10px;
+}
+
+.delivery-method {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.delivery-method.active {
+  background-color: #004d40;
+  color: white;
+}

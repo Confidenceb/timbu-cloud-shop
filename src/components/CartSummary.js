@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CartSummary.css";
 
 const CartSummary = ({ total }) => (
@@ -20,6 +21,7 @@ const CartSummary = ({ total }) => (
       <h3>Total</h3>
       <h3>${total}</h3>
     </p>
+
     <Button className="checkout-button">Check Out</Button>
     <Button className="paypal-button">
       <svg
