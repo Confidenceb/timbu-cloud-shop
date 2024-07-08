@@ -1,6 +1,7 @@
 import React from "react";
+import Button from "./Button";
 
-function MyCart({ items, className = "", qtyIncrease = true }) {
+function MyCart({ items, className = "", qtyIncrease = true, btnRmv = true }) {
   return (
     <>
       {items.map((item) => (
@@ -27,7 +28,8 @@ function MyCart({ items, className = "", qtyIncrease = true }) {
                 )}
               </span>
             </div>
-            <button className="remove-button">Remove</button>
+            {btnRmv && <Button className={"remove-button"}>Remove</Button>}
+            {/* <button className="remove-button">Remove</button> */}
           </div>
         </div>
       ))}

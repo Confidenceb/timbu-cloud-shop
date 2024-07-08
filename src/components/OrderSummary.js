@@ -29,7 +29,12 @@ const OrderSummary = ({ items }) => (
       </p>
       <p>Delivery is on Wednesday, 10th July, 2024</p>
     </div>
-    <MyCart items={items} qtyIncrease={false} className="hello-world" />
+    <MyCart
+      items={items}
+      qtyIncrease={false}
+      className="hello-world"
+      btnRmv={false}
+    />
   </div>
 );
 
