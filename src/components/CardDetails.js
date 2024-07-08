@@ -5,14 +5,14 @@ const CardDetails = () => (
   <div className="card-details">
     <h3>Card Details</h3>
     <form>
-      <input type="text" placeholder="Card Number" />
-      <input type="text" placeholder="Name On Card" />
+      <input className="input" type="text" placeholder="Card Number" />
+      <input className="input" type="text" placeholder="Name On Card" />
       <div className="form-group">
-        <input type="text" placeholder="MM/YY" />
-        <input type="text" placeholder="CVV" />
+        <input className="input" type="text" placeholder="MM/YY" />
+        <input className="input" type="text" placeholder="CVV" />
       </div>
       <div className="save-card">
-        <input type="checkbox" id="save-card" />
+        <input className="input" type="checkbox" id="save-card" />
         <label htmlFor="save-card">Save card details for later</label>
       </div>
     </form>

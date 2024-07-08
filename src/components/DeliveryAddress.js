@@ -6,17 +6,17 @@ const DeliveryAddress = () => (
     <h3>Delivery Address</h3>
     <form>
       <div className="form-group">
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
+        <input className="input" type="text" placeholder="First Name" />
+        <input className="input" type="text" placeholder="Last Name" />
       </div>
       <div className="form-group">
-        <input type="text" placeholder="Phone Number" />
-        <input type="email" placeholder="Email Address" />
+        <input className="input" type="text" placeholder="Phone Number" />
+        <input className="input" type="email" placeholder="Email Address" />
       </div>
-      <input type="text" placeholder="Home Address" />
+      <input className="input" type="text" placeholder="Home Address" />
       <div className="form-group">
-        <input type="text" placeholder="City" />
-        <input type="text" placeholder="Country" />
+        <input className="input" type="text" placeholder="City" />
+        <input className="input" type="text" placeholder="Country" />
       </div>
     </form>
   </div>

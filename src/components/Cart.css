@@ -84,7 +84,6 @@
 }
 
 .tag {
-  font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
   line-height: 21.82px;
@@ -124,6 +123,12 @@
 }
 
 .quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity span {
   display: flex;
   align-items: center;
   gap: 8px;

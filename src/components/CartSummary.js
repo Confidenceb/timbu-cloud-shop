@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CartSummary.css";
+import Button from "./Button";
 
 const CartSummary = ({ total }) => (
   <div className="cart-summary">
@@ -231,7 +232,3 @@ const CartSummary = ({ total }) => (
 );
 
 export default CartSummary;
-
-function Button({ children, className }) {
-  return <button className={`button ${className}`}>{children}</button>;
-}
