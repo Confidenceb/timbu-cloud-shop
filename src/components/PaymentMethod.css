@@ -2,23 +2,52 @@
   margin-bottom: 20px;
 }
 
-.payment-method h3 {
+.payment-method-header {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  text-align: left;
+
+  margin-bottom: 10px;
+}
+
+.payment-method-secondary {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: left;
   margin-bottom: 10px;
 }
 
 .payment-methods {
   display: flex;
   gap: 10px;
+  width: 75%;
 }
 
-.payment-method-button {
+.payment-method-btn {
   padding: 10px 20px;
-  border: 1px solid #ccc;
-  cursor: pointer;
+  border: 1px solid #10413f;
   background-color: white;
+
+  transition: all 0.3s ease-in-out;
 }
 
-.payment-method-button.active {
-  background-color: #004d40;
-  color: white;
+.payment-method-btn:hover,
+.payment-method-btn:active {
+  background-color: #e7ecec;
+}
+
+.payment-method-btn.active {
+  background-color: #e7ecec;
+}
+
+.btn-element {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-align: center;
 }

@@ -1,16 +1,41 @@
 .card-details {
   margin-bottom: 20px;
+  margin-bottom: 40px;
+
+  position: relative;
+}
+
+.card-details::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #b5b5b5;
+  position: absolute;
+  margin-bottom: 16px;
 }
 
 .card-details h3 {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: left;
+
   margin-bottom: 10px;
 }
 
-.input {
+.card-details-input {
   padding: 10px;
   border: 1px solid #ccc;
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.save-card-input {
+  display: flex;
+  align-items: center;
 }
 
 .form-group {
@@ -21,5 +46,6 @@
 .save-card {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  gap: 8px;
+  margin: 10px 0;
 }

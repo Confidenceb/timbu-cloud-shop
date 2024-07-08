@@ -32,11 +32,18 @@
 
 .buy-now-button {
   padding: 15px;
-  background-color: #004d40;
+  background-color: #10413f;
   color: white;
   border: none;
   cursor: pointer;
   width: 100%;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.buy-now-button:hover,
+.buy-now-button:active {
+  background-color: #0c312f;
 }
 
 /* Media Query for smaller screens */

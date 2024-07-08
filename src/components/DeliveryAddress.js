@@ -6,17 +6,35 @@ const DeliveryAddress = () => (
     <h3>Delivery Address</h3>
     <form>
       <div className="form-group">
-        <input className="input" type="text" placeholder="First Name" />
-        <input className="input" type="text" placeholder="Last Name" />
+        <input
+          className="delivery-input"
+          type="text"
+          placeholder="First Name"
+        />
+        <input className="delivery-input" type="text" placeholder="Last Name" />
       </div>
       <div className="form-group">
-        <input className="input" type="text" placeholder="Phone Number" />
-        <input className="input" type="email" placeholder="Email Address" />
+        <input
+          className="delivery-input"
+          type="text"
+          placeholder="Phone Number"
+        />
+        <input
+          className="delivery-input"
+          type="email"
+          placeholder="Email Address"
+        />
       </div>
-      <input className="input" type="text" placeholder="Home Address" />
+      <iv className="form-group">
+        <input
+          className="delivery-input"
+          type="text"
+          placeholder="Home Address"
+        />
+      </iv>
       <div className="form-group">
-        <input className="input" type="text" placeholder="City" />
-        <input className="input" type="text" placeholder="Country" />
+        <input className="delivery-input" type="text" placeholder="City" />
+        <input className="delivery-input" type="text" placeholder="Country" />
       </div>
     </form>
   </div>

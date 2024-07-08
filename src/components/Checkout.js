@@ -7,6 +7,7 @@ import PaymentMethod from "../components/PaymentMethod";
 import CardDetails from "../components/CardDetails";
 import OrderSummary from "../components/OrderSummary";
 import "./Checkout.css";
+import Button from "./Button";
 
 const items = [
   {
@@ -43,7 +44,7 @@ const Checkout = () => (
         <DeliveryAddress />
         <PaymentMethod />
         <CardDetails />
-        <button className="buy-now-button">Buy Now</button>
+        <Button className="buy-now-button">Buy Now</Button>
       </div>
       <OrderSummary items={items} />
     </div>
