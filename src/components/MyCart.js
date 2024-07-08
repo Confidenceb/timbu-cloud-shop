@@ -1,12 +1,25 @@
 import React from "react";
 import Button from "./Button";
 
-function MyCart({ items, className = "", qtyIncrease = true, btnRmv = true }) {
+function MyCart({
+  items,
+  className = "",
+  qtyIncrease = true,
+  btnRmv = true,
+  width = 224,
+  height = 234,
+}) {
   return (
     <>
       {items.map((item) => (
         <div key={item.id} className={`cart-item ${className}`}>
-          <img src={item.image} alt={item.name} className="cart-item-image" />
+          <img
+            src={item.image}
+            alt={item.name}
+            width={width}
+            height={height}
+            className="cart-item-image"
+          />
           <div className="cart-item-details">
             <h3 className="product-name">{item.name}</h3>
             <p className="tag">{item.tag}</p>

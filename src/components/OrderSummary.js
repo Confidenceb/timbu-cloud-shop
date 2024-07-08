@@ -34,6 +34,8 @@ const OrderSummary = ({ items }) => (
       qtyIncrease={false}
       className="hello-world"
       btnRmv={false}
+      width={158}
+      height={158}
     />
   </div>
 );
