@@ -24,7 +24,9 @@ const CartSummary = ({ total }) => (
       <h3>${total}</h3>
     </p>
 
-    <Button className="checkout-button">Check Out</Button>
+    <Link to="/Checkout" className="link">
+      <Button className="checkout-button">Check Out</Button>
+    </Link>
     <Button className="paypal-button">
       <svg
         width="50"
