@@ -18,3 +18,9 @@
 .logo {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .secure-payments {
+    margin-top: 10px;
+  }
+}

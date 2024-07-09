@@ -1,34 +1,30 @@
 .delivery-options {
+  border-radius: 8px;
+  max-width: 500px;
   margin-bottom: 20px;
-  width: 75%;
 }
 
 .delivery-options h3 {
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 27.28px;
-  text-align: left;
-
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .delivery-methods {
   display: flex;
-  gap: 16px;
+  gap: 10px;
 }
 
 .delivery-method {
-  padding: 10px 20px;
-  border: 1px solid #10413f;
-  background-color: white;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
-  transition: all 0.3s ease-in-out;
-}
-
-.delivery-method:hover,
-.delivery-method:active {
-  background-color: #e7ecec;
+  background: transparent;
 }
 
 .delivery-method.active {
@@ -38,6 +34,23 @@
 .btn-element {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.btn-element span {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .delivery-options {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .delivery-methods {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

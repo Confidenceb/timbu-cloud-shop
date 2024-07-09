@@ -3,15 +3,14 @@ import "./DeliveryOptions.css";
 import Button from "./Button";
 
 function DeliveryOptions() {
-  const [active, setActive] = useState("delivery");
-
+  const [active, setActive] = useState(true);
   return (
     <div className="delivery-options">
       <h3>How do you want your delivery?</h3>
       <div className="delivery-methods">
         <Button
-          onClick={() => setActive("delivery")}
-          className={`delivery-method ${active === "delivery" ? "active" : ""}`}
+          onClick={() => setActive(true)}
+          className={`delivery-method ${active ? "active" : ""}`}
         >
           <div className="btn-element">
             <span>
@@ -84,8 +83,8 @@ function DeliveryOptions() {
           </div>
         </Button>
         <Button
-          onClick={() => setActive("pickup")}
-          className={`delivery-method ${active === "pickup" ? "active" : ""}`}
+          onClick={() => setActive(false)}
+          className={`delivery-method ${!active ? "active" : ""}`}
         >
           <div className="btn-element">
             <span>

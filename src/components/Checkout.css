@@ -48,8 +48,8 @@
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
+  .checkout-main-content {
+    grid-template-columns: 1fr;
   }
 
   .order-summary {

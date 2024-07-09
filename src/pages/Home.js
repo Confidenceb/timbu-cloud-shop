@@ -12,7 +12,7 @@ const Home = () => (
       <Filter />
       <ProductList />
     </div>
-    <Footer />
+    <Footer takeNewsletter={true} />
   </div>
 );
 

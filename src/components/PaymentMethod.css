@@ -24,7 +24,6 @@
 .payment-methods {
   display: flex;
   gap: 10px;
-  width: 75%;
 }
 
 .payment-method-btn {
@@ -50,4 +49,18 @@
   gap: 8px;
 
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .payment-method {
+    padding: 10px;
+  }
+
+  /* .btn-element {
+    flex-direction: column;
+  } */
+
+  .delivery-method {
+    flex: 1 1 100%;
+  }
 }

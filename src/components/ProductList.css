@@ -52,3 +52,25 @@
   line-height: 21.82px;
   text-align: left;
 }
+
+/* *********************************** */
+/* Query */
+/* *********************************** */
+
+@media screen and (max-width: 1120px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .product {
+    width: 185px;
+  }
+}

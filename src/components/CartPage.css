@@ -19,16 +19,29 @@
 }
 
 /* Media Query for smaller screens */
-@media (max-width: 768px) {
-  .main-content {
+
+@media (max-width: 1316px) {
+  .cart-main-content {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1120px) {
+  .cart-main-content {
     flex-direction: column;
+    align-items: center;
   }
+}
 
-  .cart-summary {
-    width: 100%;
+/* Adjustments for even smaller screens */
+@media (max-width: 1316px) {
+  .cart-main-content {
+    margin: 0 auto;
   }
+}
 
-  .product-grid {
+@media (max-width: 1120px) {
+  .cart-main-content {
     flex-direction: column;
   }
 }

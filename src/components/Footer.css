@@ -56,7 +56,8 @@
 }
 
 .footer-links {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 20px;
@@ -117,4 +118,13 @@
 .footer-bottom p {
   margin-top: 20px;
   color: #fff;
+}
+
+/* ******************************** */
+/* Query */
+/* ******************************** */
+@media screen and (max-width: 768px) {
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
 }
