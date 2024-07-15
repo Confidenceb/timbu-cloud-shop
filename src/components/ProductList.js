@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+/*
 import Product from "./Product";
 import "./ProductList.css";
 import Pagination from "./Pagination";
+
+import React, { useEffect, useState } from "react";
 
 const ProductList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -148,8 +150,7 @@ const ProductList = () => {
     },
   ];
 
-  // const totalPages = Math.ceil(products.length / productsPerPage);
-  const totalPages = 5;
+  const totalPages = Math.ceil(products.length / productsPerPage);
   const startIndex = (currentPage - 1) * productsPerPage;
   const currentProducts = products.slice(
     startIndex,
@@ -221,6 +222,66 @@ const ProductList = () => {
         totalPages={totalPages}
         onPageChange={handlePageChange}
       />
+    </div>
+  );
+};
+
+export default ProductList;
+
+*/
+
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Product from "./Product"; // Ensure this path is correct
+
+const ProductList = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get(
+          "https://timbu-get-all-products.reavdev.workers.dev"
+        );
+        const data = response.data;
+        if (data && data.items && Array.isArray(data.items)) {
+          setProducts(data.items);
+        } else {
+          setProducts([]);
+          setError("No products found");
+        }
+      } catch (error) {
+        setError("Error fetching products");
+        setProducts([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
+
+  return (
+    <div>
+      <h1>Product List</h1>
+      <div className="product-list">
+        {products.map((product) => (
+          <Product
+            key={product.id}
+            images={product.images || []} // Ensure images is an array
+            name={product.name}
+            description={product.description}
+            price={product.price}
+            colors={product.colors || []} // Ensure colors is an array
+            limited={product.limited || false} // Default limited to false
+          />
+        ))}
+      </div>
     </div>
   );
 };
