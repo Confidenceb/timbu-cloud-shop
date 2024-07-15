@@ -230,58 +230,74 @@ export default ProductList;
 
 */
 
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Product from "./Product"; // Ensure this path is correct
+import Product from "./Product"; // Assuming you have a Product component to display each product
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isEmpty, setIsEmpty] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [page, setPage] = useState(1);
+
+  const fetchProducts = async (page) => {
+    const url = "https://timbu-get-all-products.reavdev.workers.dev/";
+    const params = {
+      organization_id: "1ad8ee3ef90449e29f139fc7039512ba",
+      reverse_sort: false,
+      page: page,
+      size: 10,
+      Appid: "KIUUGK32JE1OYTR",
+      Apikey: "9dc61904927f48909f2b6cccf31583b520240712173958870026",
+    };
+
+    try {
+      const response = await axios.get(url, { params });
+      console.log("Fetched Products:", response.data.items); // Log fetched products
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  };
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const getProducts = async () => {
+      setIsLoading(true);
+      setIsError(false);
       try {
-        const response = await axios.get(
-          "https://timbu-get-all-products.reavdev.workers.dev"
-        );
-        const data = response.data;
-        if (data && data.items && Array.isArray(data.items)) {
-          setProducts(data.items);
-        } else {
-          setProducts([]);
-          setError("No products found");
-        }
+        const data = await fetchProducts(page);
+        setProducts(data.items);
+        setIsEmpty(data.items.length === 0);
       } catch (error) {
-        setError("Error fetching products");
-        setProducts([]);
+        setIsError(true);
       } finally {
-        setLoading(false);
+        setIsLoading(false);
       }
     };
 
-    fetchProducts();
-  }, []);
+    getProducts();
+  }, [page]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error fetching products</div>;
+  if (isEmpty) return <div>No products found</div>;
 
   return (
     <div>
-      <h1>Product List</h1>
-      <div className="product-list">
-        {products.map((product) => (
-          <Product
-            key={product.id}
-            images={product.images || []} // Ensure images is an array
-            name={product.name}
-            description={product.description}
-            price={product.price}
-            colors={product.colors || []} // Ensure colors is an array
-            limited={product.limited || false} // Default limited to false
-          />
-        ))}
-      </div>
+      {products.map((product) => (
+        <Product
+          key={product.id}
+          name={product.name}
+          description={product.description}
+          price={product.prices}
+          images={product.images}
+          colors={product.colors}
+          limited={product.limited}
+        />
+      ))}
+      <button onClick={() => setPage(page > 1 ? page - 1 : 1)}>Prev</button>
+      <button onClick={() => setPage(page + 1)}>Next</button>
     </div>
   );
 };

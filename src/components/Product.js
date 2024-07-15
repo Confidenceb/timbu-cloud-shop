@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "./Product.css";
 
 const Product = ({
-  images,
+  images = [],
   name,
   description,
   price,
-  colors,
+  colors = [],
   limited = false,
 }) => {
   const [hovered, setHovered] = useState(false);
